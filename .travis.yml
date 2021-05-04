@@ -8,4 +8,4 @@ deploy:
   - provider: heroku
   - app: $APP
   - api_key:
-      - secure: $SECURE_HEROKU_KEY
+      - secure: $SECURE_HEROKU
