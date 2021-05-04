@@ -5,8 +5,8 @@ script:
   - yarn
   - yarn build:prod
 deploy:
-  - provider: heroku
-    edge: true
-  - app: $APP
-  - api_key:
-      - secure: $SECURE_HEROKU_KEY
+  provider: heroku
+  edge: true
+  app: $APP
+  api_key:
+    - secure: $SECURE_HEROKU_KEY
