@@ -1,3 +1,4 @@
+import { mediaSM } from "@/presentation/shared/style/media";
 import styled from "styled-components";
 
 export const Container = styled.aside<{
@@ -12,6 +13,10 @@ export const Title = styled.h1`
   font-weight: 700;
   color: ${(props) => props.theme.colors.text.primary};
   text-align: right;
+
+  ${mediaSM`
+    text-align: center;
+  `}
 `;
 
 export const SubTitle = styled.h2`
@@ -20,4 +25,8 @@ export const SubTitle = styled.h2`
   font-weight: 400;
   text-align: right;
   margin-top: 15px;
+
+  ${mediaSM`
+    text-align: center;
+  `}
 `;

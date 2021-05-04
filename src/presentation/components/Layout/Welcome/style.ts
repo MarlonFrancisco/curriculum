@@ -1,4 +1,4 @@
-import { mediaSM } from "@/presentation/shared/style/media";
+import { mediaMD, mediaSM } from "@/presentation/shared/style/media";
 import styled from "styled-components";
 
 export const Container = styled.section`
@@ -7,7 +7,7 @@ export const Container = styled.section`
   grid-template-rows: 100%;
   height: 100%;
 
-  ${mediaSM`
+  ${mediaMD`
     grid-template-columns: 100%;
     grid-template-rows: 100%;
   `}
@@ -21,7 +21,7 @@ export const PhotoContent = styled.aside`
   height: 100%;
   width: 100%;
 
-  ${mediaSM`
+  ${mediaMD`
     display: none;
   `}
 `;
