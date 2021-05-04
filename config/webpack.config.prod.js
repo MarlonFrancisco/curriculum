@@ -19,7 +19,7 @@ module.exports = () => {
       filename: "[name]-[fullhash].js",
       path: paths.dist,
       clean: true,
-      publicPath: "/",
+      publicPath: "/dist/",
     },
     module: {
       rules: [
