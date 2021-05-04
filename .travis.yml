@@ -4,3 +4,8 @@ node_js:
 script:
   - yarn
   - yarn build:prod
+deploy:
+  - provider: heroku
+  - app: $APP
+  - api_key:
+      - secure: $SECURE_HEROKU_KEY
