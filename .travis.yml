@@ -6,6 +6,7 @@ script:
   - yarn build:prod
 deploy:
   - provider: heroku
-  - app: "curriculumm"
+  - edge: true
+  - app: $APP
   - api_key:
-      - secure: "8496f55e-4b69-41f4-a497-39f82f44ce6d"
+      - secure: $SECURE_HEROKU_KEY
