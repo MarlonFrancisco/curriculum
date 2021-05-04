@@ -1,4 +1,4 @@
-import { Welcome, Introduction } from "@/presentation/components";
+import { Welcome, Introduction, Experience } from "@/presentation/components";
 
 import * as S from "./style";
 
@@ -7,6 +7,7 @@ const Home = () => {
     <S.Container>
       <Welcome />
       <Introduction />
+      <Experience />
     </S.Container>
   );
 };

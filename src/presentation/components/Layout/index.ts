@@ -6,3 +6,5 @@ export { default as Name } from "./Name";
 export { default as Contact } from "./Contact";
 export { default as Introduction } from "./Introduction";
 export { default as ContextBlock } from "./ContextBlock";
+export { default as Experience } from "./Experience";
+export { default as Timeline } from "./Timeline";
