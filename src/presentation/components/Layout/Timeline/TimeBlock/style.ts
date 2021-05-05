@@ -1,8 +1,14 @@
+import { mediaMD } from "@/presentation/shared/style/media";
 import styled from "styled-components";
 
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 0% 25% 75%;
+
+  ${mediaMD`
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+  `}
 `;
 
 export const Point = styled.div`
@@ -29,21 +35,25 @@ export const PointLine = styled.div`
     top: 0;
     left: 0;
     background: ${(props) => props.theme.colors.primary};
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 100px;
-    left: -65px;
+    top: 90px;
+    left: -70px;
     transform: rotate(90deg);
     background: ${(props) => props.theme.colors.border};
     border-color: ${(props) => props.theme.colors.border};
     width: 150px;
     height: 1px;
+
+    ${mediaMD`
+      display: none;
+    `}
   }
 `;
 
@@ -69,5 +79,13 @@ export const Company = styled.p`
 export const Paragraph = styled.p`
   font-size: 18px;
   color: ${(props) => props.theme.colors.text.primary};
+  border-color: ${(props) => props.theme.colors.border};
   margin-left: 100px;
+
+  ${mediaMD`
+    margin-left: 0;
+    margin-top: 20px;
+    border-bottom: 1px solid;
+    padding-bottom: 35px;
+  `}
 `;

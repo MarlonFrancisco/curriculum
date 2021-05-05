@@ -1,4 +1,10 @@
-import { Welcome, Introduction, Experience } from "@/presentation/components";
+import {
+  Welcome,
+  Introduction,
+  Experience,
+  KnowLedge,
+  Contact,
+} from "@/presentation/components";
 
 import * as S from "./style";
 
@@ -8,6 +14,10 @@ const Home = () => {
       <Welcome />
       <Introduction />
       <Experience />
+
+      <KnowLedge />
+
+      <Contact />
     </S.Container>
   );
 };

@@ -20,20 +20,3 @@ export const Content = styled.article`
     padding: 20px 30px;
   `}
 `;
-
-export const Paragraph = styled.p`
-  font-size: 18px;
-  color: ${(props) => props.theme.colors.text.primary};
-
-  p + & {
-    margin-top: 30px;
-  }
-
-  ${mediaMD`
-    font-size: 18px;
-  `}
-
-  ${mediaSM`
-    font-size: 16px;
-  `}
-`;

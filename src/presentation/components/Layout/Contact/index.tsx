@@ -1,28 +1,26 @@
+import {
+  ContextBlock,
+  PersonalData,
+  Name,
+  SocialActions,
+} from "@/presentation/components";
+
 import * as S from "./style";
 
 const Contact = () => {
   return (
-    <S.Responsive>
-      <S.Table>
-        <thead>
-          <tr>
-            <th>Localização</th>
-            <th>Celular</th>
-            <th>E-Mail</th>
-            <th>Idade</th>
-          </tr>
-        </thead>
+    <S.Container>
+      <ContextBlock title="Contato" subtitle="Ligue-me." bg="primary" />
+      <S.Content>
+        <S.HR />
+        <PersonalData />
 
-        <tbody>
-          <tr>
-            <td>São Bernardo do Campo, SP</td>
-            <td>(11) 98233-3981</td>
-            <td>marlon.nascimentofr@gmail.com</td>
-            <td>19</td>
-          </tr>
-        </tbody>
-      </S.Table>
-    </S.Responsive>
+        <S.ContainerActions>
+          <SocialActions />
+        </S.ContainerActions>
+        <Name sizeFirst={36} sizeLast={48} />
+      </S.Content>
+    </S.Container>
   );
 };
 

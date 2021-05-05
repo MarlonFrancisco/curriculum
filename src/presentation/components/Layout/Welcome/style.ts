@@ -52,26 +52,8 @@ export const DescriptionProfile = styled.div`
   margin-top: 50px;
 `;
 
-export const ButtonActions = styled.div``;
-
-export const LinkSocialNetwork = styled.a`
-  width: 56px;
-  height: 56px;
-  border-radius: ${(props) => props.theme.borderRadius};
-  background: ${(props) => props.theme.colors.bg.primary};
-  margin-left: 15px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  img {
-    width: 40px;
-    height: 40px;
-  }
-`;
-
 export const HR = styled.hr`
-  background: #767676;
-  border-color: #767676;
+  background: ${props => props.theme.colors.border};
+  border-color: ${props => props.theme.colors.border};
   margin-bottom: 30px;
 `;

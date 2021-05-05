@@ -9,7 +9,7 @@ export const Container = styled.aside<{
 `;
 
 export const Title = styled.h1`
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   color: ${(props) => props.theme.colors.text.primary};
   text-align: right;
@@ -20,7 +20,7 @@ export const Title = styled.h1`
 `;
 
 export const SubTitle = styled.h2`
-  font-size: 24px;
+  font-size: 18px;
   color: ${(props) => props.theme.colors.text.primary};
   font-weight: 400;
   text-align: right;

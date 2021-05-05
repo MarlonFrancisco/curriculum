@@ -1,4 +1,10 @@
-import { Photo, Header, Name, Image, Contact } from "@/presentation/components";
+import {
+  Photo,
+  Header,
+  Name,
+  SocialActions,
+  PersonalData,
+} from "@/presentation/components";
 
 import * as S from "./style";
 
@@ -16,27 +22,15 @@ const Welcome = () => {
 
           <S.DescriptionProfile>
             <S.Profission>Web developer & Front-end Expert</S.Profission>
-            <S.ButtonActions>
-              <S.LinkSocialNetwork
-                target="_blank"
-                href="https://www.linkedin.com/in/marlon-francisco-a8ab2215b/"
-              >
-                <Image src="/images/linkedin.svg" />
-              </S.LinkSocialNetwork>
-              <S.LinkSocialNetwork
-                target="_blank"
-                href="https://github.com/MarlonFrancisco"
-              >
-                <Image src="/images/github.svg" />
-              </S.LinkSocialNetwork>
-            </S.ButtonActions>
+
+            <SocialActions />
           </S.DescriptionProfile>
         </div>
 
         <div>
           <S.HR />
 
-          <Contact />
+          <PersonalData />
         </div>
       </S.ProfileContent>
     </S.Container>

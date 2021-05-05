@@ -22,4 +22,28 @@ export default {
       xl: 1920,
     },
   },
+
+  light: {
+    borderRadius: "4px",
+    colors: {
+      primary: "#F8BB10",
+      border: "#ececec",
+      white: "#fff",
+      text: {
+        primary: "#939393",
+        secondary: "#F8BB10",
+      },
+      bg: {
+        primary: "#fbfbfb",
+        secondary: "#fff",
+        thirty: "#f8f8f8",
+      },
+    },
+    breakpoints: {
+      sm: 600,
+      md: 960,
+      lg: 1280,
+      xl: 1920,
+    },
+  },
 };
