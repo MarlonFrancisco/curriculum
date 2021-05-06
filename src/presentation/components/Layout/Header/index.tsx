@@ -1,20 +1,55 @@
+import { useState } from "react";
+
 import * as S from "./style";
 
+type TCacheElements = {
+  [x: string]: HTMLElement;
+};
+
 const Header = () => {
+  const [cacheElements, setCacheElements] = useState<TCacheElements>({});
+
+  const scrollManipulation = (
+    top: number,
+    left: number,
+    behavior: ScrollBehavior = "smooth"
+  ) => {
+    window.scrollTo({
+      behavior,
+      top,
+      left,
+    });
+  };
+
+  const goToBlockHandler = (elementId: string) => () => {
+    const cachedElement = cacheElements[elementId];
+
+    if (cachedElement) {
+      scrollManipulation(cachedElement.offsetTop, cachedElement.offsetLeft);
+    } else {
+      const element = document.querySelector(elementId) as HTMLElement;
+
+      console.log(element);
+
+      setCacheElements((prev) => ({ ...prev, [elementId]: element }));
+
+      scrollManipulation(element.offsetTop, element.offsetLeft);
+    }
+  };
   return (
     <S.Menu>
       <ul>
         <li>
-          <a href="#intro">Introdução</a>
+          <button onClick={goToBlockHandler("#intro")}>Introdução</button>
         </li>
         <li>
-          <a href="#exp">Experiência</a>
+          <button onClick={goToBlockHandler("#exp")}>Experiência</button>
         </li>
         <li>
-          <a href="#skills">Conhecimentos</a>
+          <button onClick={goToBlockHandler("#skills")}>Conhecimentos</button>
         </li>
         <li>
-          <a href="#contact">Contato</a>
+          <button onClick={goToBlockHandler("#contact")}>Contato</button>
         </li>
       </ul>
     </S.Menu>

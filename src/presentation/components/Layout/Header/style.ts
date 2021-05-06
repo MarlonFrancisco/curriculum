@@ -10,9 +10,14 @@ export const Menu = styled.nav`
     margin-left: 13.5px;
     text-transform: uppercase;
 
-    a {
+    button {
       color: ${(props) => props.theme.colors.text.primary};
       text-decoration: none;
+      border: none;
+      background: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 16px;
     }
   }
 `;

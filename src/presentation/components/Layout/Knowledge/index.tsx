@@ -4,7 +4,7 @@ import * as S from "./style";
 
 const Knowledge = () => {
   return (
-    <S.Container>
+    <S.Container id="skills">
       <ContextBlock
         title="Conhecimentos"
         subtitle="Preguiçoso não está em meu vocabulário, só um pouco."

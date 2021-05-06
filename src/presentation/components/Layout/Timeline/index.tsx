@@ -1,60 +1,26 @@
+import { FC } from "react";
+
 import TimeBlock from "./TimeBlock";
 
 import * as S from "./style";
 
-const experiences = [
-  {
-    period: "09/2020 - Atualmente",
-    company: "WEBMOTORS",
-    office: "Front-end developer",
-    children: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-    hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet
-    vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
-    laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
-    nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris
-    non felis mollis faucibus.`,
-  },
-  {
-    period: "04/2020 - 09/2020",
-    company: "VORTTEX",
-    office: "Front-end developer",
-    children: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-    hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet
-    vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
-    laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
-    nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris
-    non felis mollis faucibus.`,
-  },
-  {
-    period: "08/2019 - 03/2020",
-    company: "VTEX",
-    office: "Front-end Intern Developer",
-    children: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-    hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet
-    vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
-    laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
-    nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris
-    non felis mollis faucibus.`,
-  },
-  {
-    period: "04/2019 - 10/2019",
-    company: "BIGGY",
-    office: "Front-end Intern Developer",
-    children: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-    hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet
-    vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
-    laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
-    nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris
-    non felis mollis faucibus.`,
-  },
-];
+type TEvent = {
+  period: string;
+  company: string;
+  office: string;
+  children: string;
+};
 
-const Timeline = () => {
+type TProps = {
+  events: TEvent[];
+};
+
+const Timeline: FC<TProps> = ({ events }) => {
   return (
     <>
-      {experiences.map((experience) => (
-        <S.Wrapper key={experience.company}>
-          <TimeBlock {...experience} />
+      {events.map((events) => (
+        <S.Wrapper key={events.company}>
+          <TimeBlock {...events} />
         </S.Wrapper>
       ))}
     </>

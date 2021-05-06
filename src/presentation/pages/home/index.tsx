@@ -4,6 +4,7 @@ import {
   Experience,
   KnowLedge,
   Contact,
+  Education,
 } from "@/presentation/components";
 
 import * as S from "./style";
@@ -14,9 +15,8 @@ const Home = () => {
       <Welcome />
       <Introduction />
       <Experience />
-
       <KnowLedge />
-
+      <Education />
       <Contact />
     </S.Container>
   );

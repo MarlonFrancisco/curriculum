@@ -9,8 +9,8 @@ import * as S from "./style";
 
 const Contact = () => {
   return (
-    <S.Container>
-      <ContextBlock title="Contato" subtitle="Ligue-me." bg="primary" />
+    <S.Container id="contact">
+      <ContextBlock title="Contato" subtitle="Ligue-me." bg="thirty" />
       <S.Content>
         <S.HR />
         <PersonalData />

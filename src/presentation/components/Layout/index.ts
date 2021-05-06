@@ -11,3 +11,4 @@ export { default as Timeline } from "./Timeline";
 export { default as KnowLedge } from "./Knowledge";
 export { default as Contact } from "./Contact";
 export { default as SocialActions } from "./SocialActions";
+export { default as Education } from "./Education";

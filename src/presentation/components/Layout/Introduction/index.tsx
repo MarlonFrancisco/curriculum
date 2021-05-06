@@ -4,7 +4,7 @@ import * as S from "./style";
 
 const Introduction = () => {
   return (
-    <S.Container id="#intro">
+    <S.Container id="intro">
       <ContextBlock title="INTRODUÇÃO" subtitle="Sobre mim." bg="thirty" />
 
       <S.Content>

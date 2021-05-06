@@ -18,4 +18,6 @@ export const Image = styled.img<{ maxWidth: number; maxHeight: number }>`
   height: 100%;
   max-width: ${(props) => `${props.maxWidth}px`};
   max-height: ${(props) => `${props.maxHeight}px`};
+  object-fit: cover;
+  object-position: top center;
 `;
