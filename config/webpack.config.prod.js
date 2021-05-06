@@ -1,4 +1,3 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
 const path = require("path");
 
@@ -16,7 +15,7 @@ module.exports = () => {
       },
     },
     output: {
-      filename: "[name]-[fullhash].js",
+      filename: "[name].bundler.js",
       path: paths.dist,
       clean: true,
       publicPath: "/dist/",
@@ -31,10 +30,6 @@ module.exports = () => {
       ],
     },
     plugins: [
-      new HtmlWebpackPlugin({
-        template: path.resolve(paths.public, "index.ejs"),
-        minify: true,
-      }),
       new Dotenv({
         path: paths.dotenv,
       }),
