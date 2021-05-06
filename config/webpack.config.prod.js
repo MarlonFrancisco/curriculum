@@ -19,7 +19,7 @@ module.exports = () => {
       filename: "[name]-[fullhash].js",
       path: paths.dist,
       clean: true,
-      publicPath: "/",
+      publicPath: "/dist/",
     },
     module: {
       rules: [
@@ -33,6 +33,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: path.resolve(paths.public, "index.ejs"),
+        minify: true,
       }),
       new Dotenv({
         path: paths.dotenv,
