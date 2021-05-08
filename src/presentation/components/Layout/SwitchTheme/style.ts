@@ -9,7 +9,7 @@ export const Button = styled.button`
   width: 50px;
   height: 50px;
   cursor: pointer;
-  background: ${(props) => props.theme.colors.bg.thirty};
+  background: ${(props) => props.theme.colors.primary};
   display: flex;
   align-items: center;
   justify-content: center;
