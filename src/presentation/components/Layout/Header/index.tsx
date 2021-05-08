@@ -49,6 +49,9 @@ const Header = () => {
           <button onClick={goToBlockHandler("#skills")}>Conhecimentos</button>
         </li>
         <li>
+          <button onClick={goToBlockHandler("#education")}>Education</button>
+        </li>
+        <li>
           <button onClick={goToBlockHandler("#contact")}>Contato</button>
         </li>
       </ul>
