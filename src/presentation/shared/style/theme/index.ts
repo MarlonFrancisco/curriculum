@@ -2,12 +2,12 @@ export default {
   default: {
     borderRadius: "4px",
     colors: {
-      primary: "#D45C5C",
+      primary: "#FF9B9B",
       border: "#767676",
       white: "#fff",
       text: {
         primary: "#D0D0D0",
-        secondary: "#D45C5C",
+        secondary: "#FF9B9B",
       },
       bg: {
         primary: "#4D4D4D",
