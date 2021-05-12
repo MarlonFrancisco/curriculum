@@ -7,7 +7,7 @@ module.exports = () => {
   return {
     mode: "production",
     entry: paths.entrypoint,
-    devtool: "inline-source-map",
+    devtool: "source-map",
     resolve: {
       extensions: [".js", ".ts", ".tsx"],
       alias: {
@@ -29,6 +29,7 @@ module.exports = () => {
         },
       ],
     },
+
     plugins: [
       new Dotenv({
         path: paths.dotenv,

@@ -9,15 +9,17 @@ const Introduction = () => {
 
 			<S.Content>
 				<S.Paragraph>
-					Meu principal objetivo profissional é buscar cada vez mais conhecimento, apaixonado por conhecer e
-					aplicar novas tecnologias no meu dia a dia. Tenho muito a aprender e entendo isso, pois procuro
-					sempre a melhor forma de compartilhar meus conhecimentos com quem deseja aprender.
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet
+					nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula
+					sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam
+					mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.
 				</S.Paragraph>
 
 				<S.Paragraph>
-					Técnico formado em Informática p/Internet(2018) e Desenvolvimento de sistemas(2019) pela ETEC Lauro
-					Gomes, apaixonado por aprender novas tecnologias e aplicá-las no meu dia a dia, sempre disposto a
-					aprender cada vez mais.
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet
+					nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula
+					sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam
+					mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.
 				</S.Paragraph>
 			</S.Content>
 		</S.Container>

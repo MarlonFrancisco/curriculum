@@ -27,7 +27,7 @@ export default {
     borderRadius: "4px",
     colors: {
       primary: "#F8BB10",
-      border: "#ececec",
+      border: "#c9c9c9",
       white: "#fff",
       text: {
         primary: "#939393",
