@@ -7,7 +7,6 @@ module.exports = () => {
   return {
     mode: "production",
     entry: paths.entrypoint,
-    devtool: "source-map",
     resolve: {
       extensions: [".js", ".ts", ".tsx"],
       alias: {
