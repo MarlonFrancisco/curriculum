@@ -6,7 +6,7 @@ export default {
       border: "#767676",
       white: "#fff",
       text: {
-        primary: "#AAAAAA",
+        primary: "#D0D0D0",
         secondary: "#D45C5C",
       },
       bg: {
